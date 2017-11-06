@@ -1,8 +1,8 @@
 <div class="question">
   <div class="card">
     <div class="card-header">
-      {{question.text}} <a href="#" class="btn btn-link" (click)="question.hide = !question.hide">Show Answer</a>
-    | <a href="#" class="btn btn-link" (click)='removeQuestion(question)'>Delete</a>
+      {{question.text}} <a href="#" class="btn btn-link" (click)="question.hide = !question.hide">Show Answer</a> <!--Creating custom EventEmitter to hide and display answer !-->
+    | <a href="#" class="btn btn-link" (click)='removeQuestion(question)'>Delete</a> <!-- Creating custom EventEmitter to delete question !-->
 </div>
     <div class="card-block" [hidden]="question.hide">
       <p class="card-text">{{question.answer}}</p>

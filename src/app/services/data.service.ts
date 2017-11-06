@@ -6,23 +6,7 @@ export class DataService {
 questions:Question[];
 
   constructor() {
-    /* this.questions = [
-      {
-        text: 'What is your name?',
-        answer: 'My name is Brad.',
-        hide: true
-      },
-      {
-        text: 'What is your favorite color?',
-        answer: 'My favorite color is black.',
-        hide: true
-      },
-      {
-        text: 'What is your favorite language?',
-        answer: 'My favorite language is JavaScript.',
-        hide: true
-      }
-    ]; */
+
   }
 
   //Get Questions from localStorage

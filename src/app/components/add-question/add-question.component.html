@@ -3,7 +3,7 @@
     Add New FAQ
   </div>
   <div class="card-block">
-    <form (submit)='addQuestion()'>
+    <form (submit)='addQuestion()'> <!-- 2 way data binding and form submission !-->
       <div class='form-group'>
         <label for='text'>Question Text</label>
         <input type="text" class="form-control" [(ngModel)]="text" name='text'>

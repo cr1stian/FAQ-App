@@ -7,7 +7,7 @@ import { Question } from '../../models/question';
   styleUrls: ['./add-question.component.css']
 })
 export class AddQuestionComponent implements OnInit {
-  @Output() questionAdded = new EventEmitter<Question>();
+  @Output() questionAdded = new EventEmitter<Question>(); //sending inputted values out to parent component
   text:string;
   answer:string;
 
@@ -17,7 +17,7 @@ export class AddQuestionComponent implements OnInit {
   ngOnInit() {
   }
 
-  addQuestion(){
+  addQuestion(){ //grabbing inputted values
     this.questionAdded.emit({text:this.text, answer:this.answer, hide:true})
   }
 
